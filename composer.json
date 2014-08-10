@@ -1,0 +1,29 @@
+{
+    "name": "piotrpasich/cakephp-symfony-router",
+    "version": "0.0.1",
+    "description": "A symfony router for cackePhp",
+    "type": "cakephp-plugin",
+    "minimum-stability": "dev",
+    "keywords": [
+        "cakephp", "routing", "route", "router", "plugin"
+    ],
+    "homepage": "http://github.com/piotrpasich/cakephp-symfony-router",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Pasich",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/piotrpasich/cakephp-symfony-router/issues",
+        "source": "https://github.com/piotrpasich/cakephp-symfony-router"
+    },
+    "extra": {
+        "installer-name": "SymfonyRouter"
+    },
+    "require": {
+        "symfony/routing": "dev-master",
+        "symfony/yaml": "dev-master"
+    }
+}
