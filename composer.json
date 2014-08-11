@@ -23,7 +23,7 @@
         "installer-name": "SymfonyRouter"
     },
     "require": {
-        "symfony/routing": "dev-master",
-        "symfony/yaml": "dev-master"
+        "symfony/routing": "*",
+        "symfony/yaml": "*"
     }
 }
