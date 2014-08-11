@@ -31,10 +31,9 @@ class SymfonyRouter
      */
     protected static $instance;
 
-    public function __construct($fileName)
+    public function __construct(RouterConfigurationInterface $routerConfiguration)
     {
-        $routerYmlConfiguration = new RouterYmlConfiguration();
-        $this->routerConfiguration = $routerYmlConfiguration->loadConfiguration($fileName);
+        $this->routerConfiguration = $routerConfiguration->loadConfiguration();
         $this->registerRoutes();
         self::$instance = $this;
     }

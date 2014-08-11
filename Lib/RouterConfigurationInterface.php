@@ -3,5 +3,5 @@
 interface RouterConfigurationInterface
 {
 
-    public function loadConfiguration($fileName);
+    public function loadConfiguration();
 }

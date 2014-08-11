@@ -85,6 +85,11 @@ Later, import the library into your "app/Config/routes.php" file like this:
 ```php
 //app/Config/routes.php
 App::uses('SymfonyRouter', 'CakephpSymfonyRouter.Lib');
+App::uses('RouterYmlConfiguration', 'CakephpSymfonyRouter.Lib');
+
+$routerYmlConfiguration = new RouterYmlConfiguration(APP . 'Config' . DS . 'router.yml');
+$symfonyRouter = new SymfonyRouter($routerYmlConfiguration);
+
 ```
 
 After that you can create own file in app/Config/router.yml like this:
