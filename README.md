@@ -1,6 +1,6 @@
-# SymfonyRouter Plugin
+# CakephpSymfonyRouter Plugin
 
-SymfonyRouter is a plugin that extends how your default Router can be used. It
+CakephpSymfonyRouter is a plugin that extends how your default Router can be used. It
 enables three new features:
 
 * Add named routes
@@ -30,7 +30,7 @@ Add the plugin to your project's `composer.json` - something like this:
 Then you need to install vendors:
 
 ```bash
-cd app/Plugins/PowerRouter
+cd app/Plugins/CakephpSymfonyRouter
 composer install
 ```
 
@@ -45,14 +45,14 @@ Why? [read this](http://getcomposer.org/doc/faqs/should-i-commit-the-dependencie
 * Download this: http://github.com/piotrpasich/cakephp-symfony-router/zipball/master
 * Unzip that download
 * Copy the resulting folder to app/Plugins
-* Rename the folder you just copied to `SymfonyRouter`
+* Rename the folder you just copied to `CakephpSymfonyRouter`
 
 **GIT Submodule**
 
 In your app directory type:
 
 ```bash
-git submodule add git://github.com/piotrpasich/cakephp-symfony-router.git plugins/SymfonyRouter
+git submodule add git://github.com/piotrpasich/cakephp-symfony-router.git plugins/CakephpSymfonyRouter
 git submodule init
 git submodule update
 ```
@@ -62,28 +62,29 @@ git submodule update
 In your plugin directory type:
 
 ```bash
-git clone git://github.com/piotrpasich/cakephp-symfony-router.git SymfonyRouter
+git clone git://github.com/piotrpasich/cakephp-symfony-router.git CakephpSymfonyRouter
 ```
 
 ## Usage
 
-SymfonyRouter is a custom route class that extends on the CakeRoute. This way you
+CakephpSymfonyRouter is a custom route class that extends on the CakeRoute. This way you
 can use it to define your routes and take advantage of it's features. Using it
 will make you able to use routing in CakePHP much easier than it is now.
 
-In order to use the features from SymfonyRouter, first you need to load the plugin
+In order to use the features from CakephpSymfonyRouter, first you need to load the plugin
 adding the following line in your `app/Config/bootstrap.php`:
 
 ```php
 //app/Config/bootstrap.php
-CakePlugin::load('SymfonyRouter');
+App::build(array('Plugin' => array(ROOT . '/Plugin/')));
+CakePlugin::load('CakephpSymfonyRouter');
 ```
 
 Later, import the library into your "app/Config/routes.php" file like this:
 
 ```php
 //app/Config/routes.php
-App::uses('SymfonyRouter', 'SymfonyRouter.Lib');
+App::uses('SymfonyRouter', 'CakephpSymfonyRouter.Lib');
 ```
 
 After that you can create own file in app/Config/router.yml like this:
@@ -109,7 +110,7 @@ To use this Plugin in your Views files and generate Urls you need to add a Helpe
 class BlogController extends AppController
 {
 
-    public $helpers = array('SymfonyRouter.SymfonyRouter');
+    public $helpers = array('CakephpSymfonyRouter.SymfonyRouter');
 
     /** ... **/
 }

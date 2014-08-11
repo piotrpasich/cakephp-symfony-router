@@ -2,7 +2,7 @@
 
 use Symfony\Component\Yaml\Parser;
 
-App::uses('RouterConfigurationInterface', 'SymfonyRouter.Lib');
+App::uses('RouterConfigurationInterface', 'CakephpSymfonyRouter.Lib');
 
 class RouterYmlConfiguration implements RouterConfigurationInterface
 {

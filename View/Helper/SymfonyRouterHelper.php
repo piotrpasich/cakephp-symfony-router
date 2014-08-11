@@ -4,7 +4,7 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\Generator\UrlGenerator;
 use Symfony\Component\Routing\RequestContext;
 
-App::uses('SymfonyRouter', 'SymfonyRouter.Lib');
+App::uses('SymfonyRouter', 'CakephpSymfonyRouter.Lib');
 
 class SymfonyRouterHelper extends AppHelper
 {

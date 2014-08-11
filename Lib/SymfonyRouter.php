@@ -11,7 +11,7 @@ use Symfony\Component\Routing\RequestContext;
 use Symfony\Component\Routing\RouteCollection;
 use Symfony\Component\Routing\Route;
 
-App::uses('RouterYmlConfiguration', 'SymfonyRouter.Lib');
+App::uses('RouterYmlConfiguration', 'CakephpSymfonyRouter.Lib');
 
 class SymfonyRouter
 {
