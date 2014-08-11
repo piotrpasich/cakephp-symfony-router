@@ -21,8 +21,11 @@
     },
     "extra": {
         "installer-paths": {
-            "app/Plugin/SymfonyRouter": ["piotrpasich/cakephp-symfony-router"]
+            "app/Plugin/{$name}/": ["type:cakephp-plugin"]
         }
+    },
+    "config": {
+        "vendor-dir": "Vendor/"
     },
     "require": {
         "composer/installers": "*",
