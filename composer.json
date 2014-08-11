@@ -20,7 +20,10 @@
         "source": "https://github.com/piotrpasich/cakephp-symfony-router"
     },
     "extra": {
-        "installer-name": "SymfonyRouter"
+        "installer-name": "SymfonyRouter",
+        "installer-paths": {
+            "app/Plugin/SymfonyRouter": ["piotrpasich/cakephp-symfony-router"]
+        }
     },
     "require": {
         "composer/installers": "*",
