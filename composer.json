@@ -23,6 +23,7 @@
         "installer-name": "SymfonyRouter"
     },
     "require": {
+        "composer/installers": "*",
         "symfony/routing": "*",
         "symfony/yaml": "*"
     }
