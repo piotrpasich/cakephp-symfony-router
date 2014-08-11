@@ -1,6 +1,10 @@
 <?php
 
-include_once(__DIR__ . '/../vendor/autoload.php');
+if (!defined('ROOT')) {
+    define('ROOT', dirname(__FILE__));
+}
+
+include_once(ROOT . '/vendor/autoload.php');
 
 use Symfony\Component\Routing\Matcher\UrlMatcher;
 use Symfony\Component\Routing\RequestContext;
